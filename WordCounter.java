@@ -27,25 +27,24 @@ public class WordCounter extends JFrame implements ActionListener {
         titleLabel.setBounds(50, 30, 150, 30);
         add(titleLabel);
 
-        paragraphArea = new JTextArea(); // Changed to JTextArea
+       paragraphArea = new JTextArea(); // Changed to JTextArea
         JScrollPane scrollPane = new JScrollPane(paragraphArea); // Add JTextArea to JScrollPane
-        scrollPane.setBounds(50, 70, 300, 150); // Adjusted position and size of JScrollPane
+        scrollPane.setBounds(50, 70, 400, 150); // Adjusted position and size of JScrollPane
         add(scrollPane);
 
         countButton = new JButton("Count Words");
-        countButton.setBounds(120, 240, 150, 30);
+        countButton.setBounds(150, 240, 200, 30);
         countButton.addActionListener(this);
         add(countButton);
 
         resultLabel = new JLabel();
-        resultLabel.setBounds(50, 290, 200, 20);
+        resultLabel.setBounds(200, 290, 100, 20);
         add(resultLabel);
 
         setSize(500, 500);
         setResizable(false);
         setVisible(true);
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == countButton) {
