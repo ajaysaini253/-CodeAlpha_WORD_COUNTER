@@ -41,7 +41,7 @@ public class WordCounter extends JFrame implements ActionListener {
         resultLabel.setBounds(50, 290, 200, 20);
         add(resultLabel);
 
-        setSize(400, 400);
+        setSize(500, 500);
         setResizable(false);
         setVisible(true);
     }
