@@ -6,7 +6,7 @@ package wordcounter;
 
 /**
  *
- * @author ajays
+ * @author ajay_saini
  */
 
 import javax.swing.*;
